@@ -1,0 +1,31 @@
+Python:   3.11.2
+Platform: Linux-6.1.0-44-cloud-amd64-x86_64-with-glibc2.36
+LightGBM: 4.6.0
+NumPy:    2.4.4
+Pandas:   3.0.2
+
+[1/4] Loading data ...
+creditcard.csv not found — fetching from OpenML (dataset id=1597)...
+OpenML download done in 27.9s (284,807 rows, saved to creditcard.csv).
+      rows=284,807  positives=492  pos_rate=0.1727%  load_time=1.747s
+      train=227,845  test=56,962
+
+[2/4] Training LightGBM ...
+Training until validation scores don't improve for 50 rounds
+[100]	val's auc: 0.928808
+Early stopping, best iteration is:
+[85]	val's auc: 0.973814
+      training_time=2.20s  best_iteration=85
+
+[3/4] Evaluating ...
+      auc_roc    = 0.945106
+      accuracy   = 0.962431
+      f1_score   = 0.078381
+      precision  = 0.040917
+      recall     = 0.928571
+
+[4/4] Measuring inference latency / throughput ...
+      latency_1row      = 0.0411 ms
+      batch_time_1k     = 0.9665 ms
+      throughput (r/s)  = 1,034,649.1
+

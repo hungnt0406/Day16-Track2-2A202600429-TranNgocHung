@@ -1,0 +1,28 @@
+{
+  "environment": {
+    "python": "3.11.2",
+    "platform": "Linux-6.1.0-44-cloud-amd64-x86_64-with-glibc2.36",
+    "lightgbm": "4.6.0",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2"
+  },
+  "dataset": {
+    "path": "creditcard.csv",
+    "rows": 284807,
+    "positives": 492,
+    "pos_rate": 0.001727485630620034,
+    "train_rows": 227845,
+    "test_rows": 56962
+  },
+  "load_data_time_sec": 1.7470350710000275,
+  "training_time_sec": 2.2023838190000333,
+  "best_iteration": 85,
+  "auc_roc": 0.9451058666291503,
+  "accuracy": 0.9624310944138197,
+  "f1_score": 0.07838070628768304,
+  "precision": 0.04091726618705036,
+  "recall": 0.9285714285714286,
+  "inference_latency_1row_ms": 0.04105808799999977,
+  "inference_throughput_1000rows_per_sec": 1034649.115928677,
+  "inference_batch_time_1000rows_ms": 0.9665112399989084
+}
